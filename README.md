@@ -1,5 +1,4 @@
 
-```markdown
 # LangChain Oracle Agent API
 
 This project provides a FastAPI application that allows users to query an Oracle database using natural language questions. It leverages LangChain's SQL Agent and OpenAI's GPT-4 model to understand the questions, interact with the database, and return relevant answers.

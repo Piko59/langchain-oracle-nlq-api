@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  langchain-api:
+    build: .
+    container_name: langchain-api-2
+    ports:
+      - "8001:8000"
+    environment:
+      - ORACLE_USER=YourUsername
+      - ORACLE_PASSWORD=YourPassword
+      - ORACLE_DSN=oracle-xe/XE
+      - OPENAI_API_KEY=your-key
+    networks:
+      - oracle-network
+
+networks:
+  oracle-network:
+    external: true
